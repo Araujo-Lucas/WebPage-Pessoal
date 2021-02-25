@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <head>
+         <meta charset="UTF-8"/>
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+         <title>Gerador de senhas</title>
+     </head>
+
+     <body>
+        <div class="senha-container">
+            <div class="senha-header">
+                <div class="senha">
+                    <span id="senha"></span>
+                    <button id="copy">Copiar para área de transferência</button>
+                </div>
+            </div>
+
+            <div class="senha-body">
+                <div class="form-control">
+                    <label for="tamanho">
+                        Tamanho da senha
+                    </label>
+                    <input type="number" min="8" max="20" id="tamanho" value="10">
+                </div>
+                
+                <div class="form-control">
+                    <label for="upper">
+                        Contêm letras maiúsculas
+                    </label>
+                    <input type="checkbox" id="upper">
+                </div>
+
+                <div class="form-control">
+                    <label for="lower">
+                        Contêm letras minúsculas
+                    </label>
+                    <input type="checkbox" id="lower">
+                </div>
+
+                <div class="form-control">
+                    <label for="number">
+                        Contêm Números
+                    </label>
+                    <input type="checkbox" id="number">
+                </div>
+
+                <div class="form-control">
+                    <label for="symbol">
+                        Contêm símbolos
+                    </label>
+                    <input type="checkbox" id="symbol">
+                </div>
+
+                <button class="generate" id="generate">
+                    Gerar senha
+                </button>
+            </div>
+        </div>
+
+     <script src="script.js" defer></script> 
+     </body>
+
+</html>

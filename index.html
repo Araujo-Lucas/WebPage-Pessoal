@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <meta charset="UTF-8"/>
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+         <title>Minha Web Page - Lucas Oliveira</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <div class="logoimg"><img src="imagens/L.O.png"></div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="">Home</a></li>
+                            <li><a class="sobremim" href="#sobre-mim">Sobre mim</a></li>
+                            <li><a href="#portifolio">Portifólio</a></li>
+                            <li><a href="#rodape">Redes Sociais</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="screen">
+            <div class="leftside">
+                <div class="section-body">
+                    <div class="section-perfil">
+                        <div class="slide">
+                            <div class="slidearea">
+                                <img class="section-perfil-avatar" src="imagens/Lucas - Foto de Perfil.jpeg">
+                                <div class="section-perfil-name">Perfil</div>
+                                <div class="section-perfil-desc">
+                                    Cuidadoso e vigilante. Apesar de tudo parecer estar em ordem, os riscos podem estar muito bem escondidos. Em vez de negá-los é preciso trazê-los à tona e resolve-los. Isso possibilita um melhor planejamento e evita futuros equívocos. Capacidade de recomendar, intermediar e aconselhar os outros. Grande capacidade de absorver e compartilhar informações e persistência para acompanhar uma tarefa até sua conclusão.
+                                </div>
+
+                                <div class="competencias">
+                                    Competências
+                                    <img src="imagens/competencias.png">
+                                </div>
+
+                                <div class="interesses-title">Interesses</div>
+
+                                <div class="row">
+                                    <div class="column">
+                                        <img class="interesses-foto" src="imagens/raquete.png">
+                                        <p class="interesse-nome">Tennis</p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="interesses-foto" src="imagens/música.png">
+                                        <p class="interesse-nome">Música</p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="interesses-foto" src="imagens/graficos.png">
+                                        <p class="interesse-nome">Estatística</p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="interesses-foto" src="imagens/amigos.png">
+                                        <p class="interesse-nome">Amigos</p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="interesses-foto" src="imagens/restaurantes.png">
+                                        <p class="interesse-nome">Restaurantes</p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="interesses-foto" src="imagens/youtube.png">
+                                        <p class="interesse-nome">YouTube</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <h1>Lucas de Araújo Santos Oliveira</h1>
+                <h2>Engenheiro de Processos e Técnico em Desenvolvimento de Sistemas</h2>
+                <div class="dados-pessoais">
+                    <p class="idade"><b>Idade:</b> 25 anos</p>
+                    <!-- <p class="cpf"><b>CPF:</b> 07106410527</p>  -->
+                    <p class="estado-civil"><b>Estado civil:</b> Solteiro</p>
+                    <p class="filhos"><b>Possui filhos:</b> Não</p>
+                </div>
+                <h2>Resumo</h2>
+                <p class="resumo">Atualmente buscando colocação no mercado de trabalho e disposto a aceitar desafios enriquecedores nas áreas de engenharia de processos químicos, desenvolvimento de sistemas (TI), qualidade e projetos. Tenho facilidade de lidar com situações adversas, sejam elas técnicas ou interpessoais. Nesse sentido, reajo bem a conselhos e críticas, buscando soluções práticas no dia a dia como profissional. Sou reconhecido por me antecipar às situações de responsabilidade, buscando cumprir minhas obrigações e prazos de forma rápida e precisa. Viso assim à contínua busca por conhecimento, para o melhor desempenho das minhas funções. Além de buscar uma recolocação, busco um novo desafio para alavancar minha carreira e agregar valor e realizações aos meus conhecimentos.</p>
+            </div>
+
+            
+            <div class="rightside">
+                <h2>Entre em contato</h2>
+                <form method="POST" action = "cadastro.php" class="validarForm">
+                    <label>
+                        Nome Completo: <br>
+                        <input type="text" name="name" data-rules = "required|min=2">
+                    </label>
+
+                    <label>
+                        E-mail: <br>
+                        <input type="text" name="email" data-rules = "required|email">
+                    </label>
+
+                    <label>
+                        Telefone: <br>
+                        <input type="tel" name="tel" data-rules = "required|tel=11">
+                    </label>
+
+                    <label>
+                        Mensagem: <br>
+                        <textarea  id="" cols="30" rows="10"></textarea>
+                    </label>
+
+                    <label>
+                        <input class="botao" type="submit" value="Enviar">
+                    </label>
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="main" id="sobre-mim">
+            <h2>Formação Acadêmica</h2>
+            <div class="formacao-academica">
+                <h3>Universidade Salvador - UNIFACS</h3>
+                <p><b>Curso:</b> Bacharelado em Engenharia Química, Score - 8,0</p>
+                <p><b>Status:</b> Graduado (2014 – 2018)</p>
+                <p><b>Atividades e grupos:</b> Iniciação Científica e Projeto de extensão</p>
+                <ul>
+                    <li>Participação do Núcleo de estudos em Modelagem e Simulação de Projetos e Processos de Engenharia e Tecnologia da Informação - NEMPPE, com foco na área de simulação e controle de processos (analisadores virtuais).</li> <br>
+                    <li>Participação do Projeto Viver Engenharia da UNIFACS. Neste projeto dentre as diversas frentes de trabalho, fui responsável pela organização de cursos de simuladores de processos, muito utilizados na indústria, como o Aspen Plus.</li>
+                </ul>
+
+                <h3>SENAI-CIMATEC</h3>
+                <p><b>Curso:</b> Técnico em Desenvolvimento de Sistemas</p>
+                <p><b>Status:</b> Graduando (2020 – presente)</p>
+            </div>
+            
+            <div class="projetos" id="portifolio">
+                <h2>Portifólio</h2>
+                <div class="slider">
+                    <div class="slider-controls">
+                        <div class="slider-control" onclick="goPrev()">
+                            <img src="imagens/costas.png">
+                        </div>
+                        <div class="slider-control" onclick="goNext()">
+                            <img src="imagens/proximo.png">
+                        </div>
+                    </div>
+    
+                    <div class="slider-width">
+                        <div class="slider-item">
+                            <p>Análise de Pinch do processo de produção do monocloreto de vinila pela rota de 
+                                produção do acetileno utilizando o Aspen Energy Analyzer. <br><br> 
+                                <a class="tcc" href="documentos/TCC (Lucas Oliveira) 2018.2.pdf" download="TCC">Download TCC</a>
+                            </p>
+                                
+                            <img class="fluxograma" src="imagens/fluxograma.png">
+                        </div>
+
+                        <div class="slider-item">
+                            <p>Gerador de senhas utilizando HTML5, CSS3 e JavaScript. <br><br>
+                                <a href="documentos/gerador-senhas.html" target="_blank">Gerador de Senhas</a>
+                            </p>
+                            
+                            <img class="senhas" src="imagens/gerador de senhas.png">
+                        </div>
+                       
+                        <div class="slider-item">
+                            <p>Quiz App utilizando HTML5, CSS3 e JavaScript. <br><br>
+                                <a href="documentos/quizApp.html" target="_blank">Quiz App</a>
+                            </p>
+                            
+                            <img class="quiz" src="imagens/quiz.png">
+                        </div>
+
+                        <div class="slider-item">
+                            <p>App para contagem regressiva utilizando HTML5, CSS3 e JavaScript.<br><br>
+                                <a href="documentos/contagem regressiva.html" target="_blank">Countdown Timer</a>
+                            </p>
+                            
+                            <img class="countdown" src="imagens/countdown.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="rodape">
+            <div class="section-share">
+                <div class="section-share-legend">
+                    <img src="imagens/share.png">
+                    <b>Redes sociais</b>
+                </div>
+    
+                <div class="section-share-item">
+                    <div class="section-share-icon linkedin">
+                        <a href="https://www.linkedin.com/in/lucas-de-araújo-santos-oliveira-1ab400118" target="_blank"><img src="imagens/linkedin.png"></a>
+                    </div>
+                </div>
+    
+                <div class="section-share-item">
+                    <div class="section-share-icon github">
+                        <a href="https://github.com/Araujo-Lucas" target="_blank"><img src="imagens/github.png"></a>
+                    </div>
+                </div>
+    
+                <div class="section-share-item">
+                    <div class="section-share-icon whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=5571986000451&text=Oi%2C%20eu%20sou%20o%20Lucas" target="_blank"><img src="imagens/whatsapp.png"></a>
+                    </div>
+                </div>
+    
+                <div class="section-share-item">
+                    <div class="section-share-icon skype">
+                        <a href="https://join.skype.com/invite/yCJAJu7r7raZ" target="_blank"><img src="imagens/skype.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-rodape">
+                <b>Contato:</b> 
+
+                <div class="celular">
+                    <p class="contato-info"><img src="imagens/smartphone-call.png"> (71) 98600-0451</p>
+                </div>
+                
+                <div class="email">
+                    <p class="contato-info"><img src="imagens/email.png"> lucas.as.oliveira@outlook.com</p>
+                </div>
+
+                <div class="endereco">
+                    <p class="contato-info"><img src="imagens/casa.png"> Rua Lima Borges, Nº 225, Casa 17, Pituaçu, Salvador – BA</p>
+                </div>
+            </div>
+        
+        </footer>
+
+
+
+     <script src="script.js"></script> 
+    </body>
+
+</html>
